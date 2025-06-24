@@ -1,0 +1,75 @@
+
+
+.nav-link{
+    color: black;
+}
+.imgweb{
+  width: 300px;
+  height: 300px; لوقو
+  border-radius: 20px;
+  display: flex;
+  margin-top: 100px;
+}
+
+
+@keyframes slideInLeft {
+  0%   { left: 0px; }
+  50%  { left: 200px; }
+  100% { left: 200px; } انميشن
+}
+
+.card-animate {
+  position: relative;
+  animation: slideInLeft 1.5s ease infinite;
+}
+
+.card-animate.delay-1 { animation-delay: 0.4s; }
+.card-animate.delay-2 { animation-delay: 0.3s; }
+.card-animate.delay-3 { animation-delay: 0.1s; }
+
+a.card-link {
+  text-decoration: none;
+  color: #2c5ae3; لون الرابط
+}
+
+.footer-container {
+  background-color: rgb(37, 63, 120);
+  color: white;
+  padding: 20px;
+  text-align: center; تنسيق الفوتر
+  margin-top: 20px;
+  display: block;
+}
+
+.btn-submit{
+  background-color: rgb(37, 63, 120);;
+  color: #f6f6f6;
+  font-size: 14px; البوتون تبع الفورم
+  border-radius: 10px;
+  padding: 4px 14px;
+  border: none;
+  box-sizing: border-box  ;
+}
+
+.my-navbar {
+  background-color:  #9aafd4 !important; الباك جراوند الناف بار
+}
+
+
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px; تبع الناف بار
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 10px;
+}
+
+
+
+.contact-info li img { وهذا كمان
+  width: 20px;
+  margin-right: 8px;
+}
