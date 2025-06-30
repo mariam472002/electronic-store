@@ -5,7 +5,7 @@
 }
 .imgweb{
   width: 300px;
-  height: 300px; لوقو
+  height: 300px; 
   border-radius: 20px;
   display: flex;
   margin-top: 100px;
@@ -15,12 +15,13 @@
 @keyframes slideInLeft {
   0%   { left: 0px; }
   50%  { left: 200px; }
-  100% { left: 200px; } انميشن
+  100% { left: 200px; } 
 }
 
 .card-animate {
   position: relative;
   animation: slideInLeft 1.5s ease infinite;
+  margin-bottom: 30px;
 }
 
 .card-animate.delay-1 { animation-delay: 0.4s; }
@@ -29,14 +30,31 @@
 
 a.card-link {
   text-decoration: none;
-  color: #2c5ae3; لون الرابط
+  color: #2c5ae3; 
 }
+
+.card {
+  height: 100%; /* يخلي الكارد يتمدد لياخذ كامل الطول */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  height: 250px;          /* اضبط الطول كما يناسب */
+  object-fit: cover;      /* يضبط الصورة داخل الإطار بدون تمدد أو تشويه */
+  width: 100%;
+}
+
+.card-body {
+  flex-grow: 1; /* عشان كل الكروت تكبر لنفس الطول حسب المحتوى */
+}
+
 
 .footer-container {
   background-color: rgb(37, 63, 120);
   color: white;
   padding: 20px;
-  text-align: center; تنسيق الفوتر
+  text-align: center; 
   margin-top: 20px;
   display: block;
 }
@@ -44,7 +62,7 @@ a.card-link {
 .btn-submit{
   background-color: rgb(37, 63, 120);;
   color: #f6f6f6;
-  font-size: 14px; البوتون تبع الفورم
+  font-size: 14px; 
   border-radius: 10px;
   padding: 4px 14px;
   border: none;
@@ -52,15 +70,14 @@ a.card-link {
 }
 
 .my-navbar {
-  background-color:  #9aafd4 !important; الباك جراوند الناف بار
+  background-color:  #9aafd4 !important; 
+
 }
-
-
 
 .contact-info {
   list-style: none;
   padding: 0;
-  margin-top: 20px; تبع الناف بار
+  margin-top: 20px; 
   display: flex;
   flex-direction: column;
   align-items: center; 
@@ -69,7 +86,29 @@ a.card-link {
 
 
 
-.contact-info li img { وهذا كمان
+.contact-info li img { 
   width: 20px;
   margin-right: 8px;
 }
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img-top {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* .card-body {
+  flex-grow: 1;
+}
+
+.card-footer {
+  background-color: white;
+  border-top: none;
+} */

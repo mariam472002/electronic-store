@@ -8,6 +8,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <style>
+  
+
+
+
+.product-card {
+      background-color: white;
+      padding: 15px;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 200px;
+      height: 200px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .product-card button {
+      background-color: #27ae60;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    </style>
+
 </head>
 <body>
    <header>
@@ -121,78 +163,79 @@
 <br>
 
 
+<!-- Smartphones Section -->
 <section>
-
-  <div class="container"></div>
-  <h2 class="text-center fw-bold">Smartphones</h2>
-
-
   <div class="container mt-5">
-  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <h2 class="text-center fw-bold mb-4">Smartphones</h2>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <!-- Card 1 -->
+
+
+      <div class="col">
+        <div class="card h-10">
+          <img src="image/b8a1bf75ee626940d63585279757bf7c.jpg" class="card-img-top product-img" alt="iPhone 13">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h5 class="card-title">iPhone 13</h5>
+              <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 512GB</p>
+            </div>
+            <p class="fw-bold mt-2">$700</p>
+            <div>
+              <a href="card.html" class="card-link">Card</a>
+              <a href="favorites.html" class="card-link">Favorites</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+
+   
+       
+      <div class="col">
+        <div class="card h-100">
+          <img src="image/product07.png" class="card-img-top product-img" alt="HUAWEI">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h5 class="card-title">HUAWEI</h5>
+              <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 256GB</p>
+            </div>
+            <p class="fw-bold mt-2">$500</p>
+            <div>
+              <a href="card.html" class="card-link">Card</a>
+              <a href="favorites.html" class="card-link">Favorites</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+
+
     
-    <!-- Card 1 -->
-    <div class="col">
-      <div class="card h-100 ">
-        <img src="image/b8a1bf75ee626940d63585279757bf7c.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">iphone 13</h5>
-          <p>smoothy and Attenuate,<br>RAM8 , Hard 512GB   </p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">$700</li>
-        </ul>
-        <div class="card-body">
-          <a href="card.html" class="card-link">Card</a>
-          <a href="favorites.html" class="card-link">favorites</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 2 -->
-
-    <div class="col">
-      <div class="card h-100 ">
-        <img src="image/product07.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">HUAWEI</h5>
-          <p>smoothy and Attenuate,<br>RAM8 , Hard 256GB   </p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">$500</li>
-        </ul>
-        <div class="card-body">
-         <a href="card.html" class="card-link">Card</a>
-          <a href="favorites.html" class="card-link">favorites</a>
+      <div class="col">
+        <div class="card h-100">
+          <img src="image/f605518975bc69306692259cbdff1bb4.jpg" class="card-img-top product-img" alt="Samsung">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h5 class="card-title">SAMSUNG</h5>
+              <p class="card-text">Smoothy and Attenuate,<br>S23 ULTRA RAM12, Hard 512GB</p>
+            </div>
+            <p class="fw-bold mt-2">$600</p>
+            <div>
+              <a href="card.html" class="card-link">Card</a>
+              <a href="favorites.html" class="card-link">Favorites</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Card 3 -->
-    <div class="col">
-      <div class="card h-100 ">
-        <img src="image/f605518975bc69306692259cbdff1bb4.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">SAMSUNG</h5>
-          <p>smoothy and Attenuate,<br> s23 ULTRA RAM12 , Hard 512GB   </p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">$600</li>
-          
-        </ul>
-        <div class="card-body">
-          <a href="card.html" class="card-link">Card</a>
-          <a href="favorites.html" class="card-link">favorites</a>
-        </div>
-      </div>
     </div>
-
   </div>
-</div>
-</div>
-  
-
-
 </section>
+
 <br><br>
 
 <section>
