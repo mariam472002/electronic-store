@@ -7,20 +7,25 @@
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+    </style>
 </head>
 <body>
-     <header>
 
-       <nav class="navbar navbar-expand-lg fixed-top my-navbar">
+    <header>
+
+       <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
 
   <div class="container-fluid">
     <img src="image/shopify-stroke-rounded.svg" alt="Brand Logo" width="40" height="40">
    
     <div class="collapse navbar-collapse" >
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         <a class="nav-link" href="categories.html">Categories</a>
-        <!-- <a class="nav-link" href="#">Services</a> -->
+        <a class="nav-link" href="order.html">Orders</a>
         <a class="nav-link" href="#contact">Contact Us</a>
 
       </div>
@@ -47,75 +52,89 @@
 
     </header>
 
-    <section>
-  <div class="container"></div>
-  <h2 class="text-center fw-bold">favorites</h2>
-
-
-  <div class="container mt-5">
-  <div class="row row-cols-1 row-cols-md-4 g-4">
+     <section>
+   <div class="container mt-5">
+  <h2 class="text-center fw-bold section-heading">FAORITES</h2>
+  <div class="row row-cols-1 row-cols-md-5 g-4">
     
     <!-- Card 1 -->
     <div class="col">
-      <div class="card h-100 ">
-        <img src="image/product01.png" class="card-img-top" alt="...">
+      <div class="card h-100">
+        <img src="image/product01.png" class="card-img-top fixed-img" alt="...">
         <div class="card-body">
           <h5 class="card-title">Apple</h5>
-          <p>smoothy and Attenuate,<br>RAM8 , Hard 512GB   </p>
+          <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 512GB.</p>
+          <h5>$500</h5>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">$500</li>
-        </ul>
         <div class="card-body">
-          <a href="card.html" class="card-link">Card</a>
-          <a href="favorites.html" class="card-link">favorites</a>
+          <a class="btn color" href="card.html" role="button">Add to Card</a>  
         </div>
       </div>
     </div>
 
     <!-- Card 2 -->
-
-   <div class="col">
-      <div class="card h-100 ">
-        <img src="image/b8a1bf75ee626940d63585279757bf7c.jpg" class="card-img-top" alt="...">
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/b8a1bf75ee626940d63585279757bf7c.jpg" class="card-img-top fixed-img" alt="...">
         <div class="card-body">
-          <h5 class="card-title">iphone 13</h5>
-          <p>smoothy and Attenuate,<br>RAM8 , Hard 512GB   </p>
+          <h5 class="card-title">iPhone 13</h5>
+          <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 512GB</p>
+          <h5>$700</h5>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">$700</li>
-        </ul>
         <div class="card-body">
-          <a href="card.html" class="card-link">Card</a>
-          <a href="favorites.html" class="card-link">favorites</a>
+          <a class="btn color" href="card.html" role="button">Add to Card</a>  
         </div>
       </div>
     </div>
 
     <!-- Card 3 -->
     <div class="col">
-      <div class="card h-100 ">
-        <img src="image/f605518975bc69306692259cbdff1bb4.jpg" class="card-img-top" alt="...">
+      <div class="card h-100">
+        <img src="image/mobile-phone-case-product-showcase.jpg" class="card-img-top fixed-img" alt="...">
         <div class="card-body">
           <h5 class="card-title">SAMSUNG</h5>
-          <p>smoothy and Attenuate,<br> s23 ULTRA RAM12 , Hard 512GB   </p>
+          <p class="card-text">Middle and big,<br>RAM16 , Hard 512GB</p>
+          <h5>$650</h5> 
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">$600</li>
-          
-        </ul>
         <div class="card-body">
-          <a href="card.html" class="card-link">Card</a>
-          <a href="favorites.html" class="card-link">favorites</a>
+          <a class="btn color" href="card.html" role="button">Add to Card</a>  
         </div>
       </div>
     </div>
 
+    <!-- Card 4 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/digital-tablet-case-technology-electronics.jpg" class="card-img-top fixed-img" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">README</h5>
+          <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 256GB</p>
+          <h5>$500</h5> 
+        </div>
+        <div class="card-body">
+          <a class="btn color" href="card.html" role="button">Add to Card</a>
+        </div>
+      </div>
+    </div>
 
+    <!-- Card 5 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/11474968.png" class="card-img-top fixed-img" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">DELL</h5>
+          <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 512GB.</p>
+          <h5>$900</h5> 
+        </div>
+        <div class="card-body">
+          <a class="btn color" href="card.html" role="button">Add to Card</a>  
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-</div>
 </section>
-    
+
+  
 </body>
 </html>

@@ -10,7 +10,7 @@
     
     <style>
 .hero-section {
-  background-image: url('image/abstract-techno-background-with-connecting-lines.jpg');
+  background-image: url('image/2134.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -18,8 +18,24 @@
   margin-bottom: 30px;
   
 }
+.circle-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 
-.hero-text {
+ .circle-img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 20px #9cd4f9;
+  }
+
+.textcolor{
+  color: rgb(169, 9, 9);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* .hero-text {
   position: absolute;
   top: 20%;
   right: 60px;
@@ -28,7 +44,7 @@
   max-width: 400px;
   line-height: 1.5;
   font-size: 10px;
-}
+} */
 
 
 </style>
@@ -38,7 +54,7 @@
 <body>
     <header>
 
-       <nav class="navbar navbar-expand-lg fixed-top my-navbar">
+       <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
 
   <div class="container-fluid">
     <img src="image/shopify-stroke-rounded.svg" alt="Brand Logo" width="40" height="40">
@@ -78,14 +94,43 @@
 
 
 <section class="hero-section">
-  <div class="hero-text">
+  <!-- <div class="hero-text">
     <h1>
       Smart Tech Starts Here.<br>
       Discover Innovation <br>at Every Click.<br>
       Your Favorite Electronics All in One Place.
     </h1>
-  </div>
+  </div> -->
 </section> 
+
+
+<div class="container my-5">
+
+  <div class="row text-center justify-content-center">
+
+    <div class="col-6 col-sm-4 col-md-2">
+      <img src="image/colorized-glass-phone-16-pro-max.jpg" class="img-fluid circle-img" alt="...">
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-2">
+      <img src="image/product03.png" class="img-fluid circle-img" alt="...">
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-2">
+      <img src="image/10344524.png" class="img-fluid circle-img" alt="...">
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-2">
+      <img src="image/purple-computer-mouse.jpg" class="img-fluid circle-img" alt="...">
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-2">
+      <img src="image/closeup-black-computer-keyboard.jpg" class="img-fluid circle-img" alt="...">
+    </div>
+
+  </div>
+</div>
+
 
 
 <section>
@@ -146,6 +191,91 @@
 </div>
 </section>
 
+<section>
+  <div class="container mt-5">
+  <h2 class="text-center fw-bold">TOP SELLING</h2>
+  <div class="row row-cols-1 row-cols-md-5 g-4">
+    
+    <!-- Card 1 -->
+    <div class="col">
+      
+
+      <div class="card h-100">
+        <img src="image/mobile-phone-case-product-showcase.jpg" class="card-img-top fixed-img" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Galaxy</h5>
+          <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 512GB.</p>
+        </div>
+        <div class="card-footer">
+          <small class="textcolor">Updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/colorized-glass-phone-16-pro-max.jpg" class="card-img-top fixed-img" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">iphone</h5>
+          <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 512GB</p>
+        </div>
+        <div class="card-footer">
+          <small class="textcolor">Updated 5 mins ago</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product05.png" class="card-img-top fixed-img" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Headphone</h5>
+          <p class="card-text">Smoothy and Attenuate,<br>smooth voice</p>
+        </div>
+        <div class="card-footer">
+          <small class="textcolor">Updated 10 mins ago</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product03.png" class="card-img-top fixed-img" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">HP LAPTOP</h5>
+          <p class="card-text">Smoothy and Attenuate,<br>RAM16, Hard 512GB</p>
+        </div>
+        <div class="card-footer">
+          <small class="textcolor">Updated 8 mins ago</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="image/product04.png" class="card-img-top fixed-img" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">IPAD</h5>
+          <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 512GB.</p>
+        </div>
+        <div class="card-footer">
+          <small class="textcolor">Updated 12 mins ago</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</section>
+
+
+
+
 
 
 <section>
@@ -171,44 +301,51 @@
     
   
 
-<footer class="container-fluid  footer-container">
-  <div>
-  <div class="row align-items-start">
-    <div class="col">
-     <h1 style="font-size: 30px;">About Us</h1>
-     <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, <br>sed do eiusmod tempor incididunt ut.</p>
-     <ul class="contact-info">
-      <li> <img src="image/location-01-Stroke-Rounded.png" alt="">1734 Stonecoal Road</li>
-      <li><img src="image/call-02-Stroke-Rounded.png" alt="">+967 777333555</li>
-      <li><img src="image/mail-01-Stroke-Rounded.png" alt="">email@email.com</li>
-     </ul>
-    </div>
-    <div class="col">
-      <h1 style="font-size: 30px;">Information</h1> 
-      <ul style="list-style: none; margin-bottom: 10px">
-        <li style="margin-bottom: 10px">About Us</li>
-        <li style="margin-bottom: 10px">Privacy Policy</li>
-        <li style="margin-bottom: 10px">Orders and Returns</li>
-        <li style="margin-bottom: 10px">Terms </li>
-        <li style="margin-bottom: 10px">Conditions</li>
-        <li style="margin-bottom: 10px">Contact Us</li>
-      </ul>
-    </div>
-    <div class="col">
-     <h1 style="font-size: 30px;">Service</h1> 
-      <ul style="list-style: none; margin-bottom: 10px">
-        <li style="margin-bottom: 10px">My Account</li>
-        <li style="margin-bottom: 10px">View Card</li>
-        <li style="margin-bottom: 10px">Wishlist</li>
-        <li style="margin-bottom: 10px">Track My Order </li>
-        <li style="margin-bottom: 10px">Contact Us</li>
-        <li style="margin-bottom: 10px">Help</li>
-      </ul>
+<footer class="container-fluid footer-container">
+  <div class="container">
+    <div class="row justify-content-between">
+      
+      <!-- العمود الأول: About Us -->
+      <div class="col-md-4 text-start">
+        <h1 style="font-size: 30px;">About Us</h1>
+        <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, <br>sed do eiusmod tempor incididunt ut.</p>
+        <ul class="contact-info">
+          <li><img src="image/location-01-Stroke-Rounded.png" alt="">1734 Stonecoal Road</li>
+          <li><img src="image/call-02-Stroke-Rounded.png" alt="">+967 777333555</li>
+          <li><img src="image/mail-01-Stroke-Rounded.png" alt="">email@email.com</li>
+        </ul>
+      </div>
+
+      <!-- العمود الثاني: Information -->
+      <div class="col-md-3">
+        <h1 style="font-size: 30px;">Information</h1> 
+        <ul style="list-style: none; padding-left: 0;">
+          <li style="margin-bottom: 10px">About Us</li>
+          <li style="margin-bottom: 10px">Privacy Policy</li>
+          <li style="margin-bottom: 10px">Orders and Returns</li>
+          <li style="margin-bottom: 10px">Terms </li>
+          <li style="margin-bottom: 10px">Conditions</li>
+          <li style="margin-bottom: 10px">Contact Us</li>
+        </ul>
+      </div>
+
+      <!-- العمود الثالث: Service -->
+      <div class="col-md-3">
+        <h1 style="font-size: 30px;">Service</h1> 
+        <ul style="list-style: none; padding-left: 0;">
+          <li style="margin-bottom: 10px">My Account</li>
+          <li style="margin-bottom: 10px">View Card</li>
+          <li style="margin-bottom: 10px">Wishlist</li>
+          <li style="margin-bottom: 10px">Track My Order </li>
+          <li style="margin-bottom: 10px">Contact Us</li>
+          <li style="margin-bottom: 10px">Help</li>
+        </ul>
+      </div>
+
     </div>
   </div>
-</div>
-
 </footer>
+
 
 </body>
 </html>

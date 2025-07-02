@@ -11,6 +11,11 @@
   margin-top: 100px;
 }
 
+.custom-navbar {
+background-color: #bbdbf0;
+color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 @keyframes slideInLeft {
   0%   { left: 0px; }
@@ -28,27 +33,40 @@
 .card-animate.delay-2 { animation-delay: 0.3s; }
 .card-animate.delay-3 { animation-delay: 0.1s; }
 
-a.card-link {
-  text-decoration: none;
-  color: #2c5ae3; 
+
+
+.fixed-img {
+  height: 200px;
+  object-fit: cover;
 }
 
-.card {
-  height: 100%; /* يخلي الكارد يتمدد لياخذ كامل الطول */
-  display: flex;
-  flex-direction: column;
+
+.card:hover .fixed-img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
-.card-img-top {
-  height: 250px;          /* اضبط الطول كما يناسب */
-  object-fit: cover;      /* يضبط الصورة داخل الإطار بدون تمدد أو تشويه */
-  width: 100%;
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(156, 156, 224, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-.card-body {
-  flex-grow: 1; /* عشان كل الكروت تكبر لنفس الطول حسب المحتوى */
+.color{
+  background-color: #7477a3;
+  color: #ffffff;
+  
 }
 
+.color:hover{
+  background-color: #3f3564;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.section-heading {
+  margin-top: 100px; 
+}
 
 .footer-container {
   background-color: rgb(37, 63, 120);
@@ -69,27 +87,25 @@ a.card-link {
   box-sizing: border-box  ;
 }
 
-.my-navbar {
-  background-color:  #9aafd4 !important; 
 
-}
 
 .contact-info {
   list-style: none;
   padding: 0;
-  margin-top: 20px; 
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  gap: 10px;
+  margin-top: 20px;
 }
 
+.contact-info li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
 
-
-.contact-info li img { 
+.contact-info li img {
   width: 20px;
   margin-right: 8px;
 }
+
 
 .card {
   height: 100%;

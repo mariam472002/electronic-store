@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>My Orders</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <style>
     .order-status {
@@ -39,18 +41,58 @@
       border-radius: 8px;
       padding: 15px;
       margin-bottom: 20px;
+      max-width: 500px;
+      margin-left: 400px;
     }
   </style>
 </head>
 
+ <header>
+
+       <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+
+  <div class="container-fluid">
+    <img src="image/shopify-stroke-rounded.svg" alt="Brand Logo" width="40" height="40">
+   
+    <div class="collapse navbar-collapse" >
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        <a class="nav-link" href="categories.html">Categories</a>
+        <a class="nav-link" href="order.html">Orders</a>
+        <a class="nav-link" href="#contact">Contact Us</a>
+
+      </div>
+
+      <div class="d-flex align-items-center ms-auto gap-5" style="margin-right: 15px;">
+        
+<a href="favorites.html" class="nav-link d-flex align-items-center gap-2">
+  <i class="fa-regular fa-heart fa-lg text-dark"></i>
+  <span class="small"><strong>Favorite</strong> </span>
+</a>
+
+
+        <!-- أيقونة البروفايل -->
+        <a href="profile.html" class="nav-link ">
+          <i class="fa-solid fa-user fa-xl text-dark"></i>
+        </a>
+      </div>         
+</div>
+
+
+    </div>
+  </div>
+</nav>
+
+    </header>
+
 <body class="bg-light">
   <div class="container mt-5">
-    <h2 class="text-center xfw-bold mb-4">My Orders</h2>
+    <h2 class="text-center xfw-bold mb-4 section-heading">My Orders</h2>
 
     <!-- Order 1 -->
     <div class="order-card d-flex align-items-center justify-content-between">
       <div class="d-flex align-items-center gap-3">
-        <img src="image/b8a1bf75ee626940d63585279757bf7c.jpg" alt="Product Image" class="product-img">
+        <img src="image/colorized-glass-phone-16-pro-max.jpg" alt="Product Image" class="product-img">
         <div>
           <h5 class="mb-1">iPhone 13</h5>
           <p class="mb-1">Quantity: 1 | Price: $700</p>
