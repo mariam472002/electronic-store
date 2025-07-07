@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+       
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .section-heading {
+            margin-bottom: 2rem;
+           
+        }
+        
+
+        .card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .card-img-top.fixed-img {
+            height: 200px;
+            object-fit: contain; 
+            padding: 10px;
+        }
+
+        .card-title {
+            font-weight: bold;
+        }
+
+        .card-text {
+            color: #282f34;
+            font-size: 0.9rem;
+        }
+        
+        .card .price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .btn.color {
+            background-color: #000000;
+            color: #ead8e6;
+            font-weight: 500;
+        }
+
+        .btn.color:hover {
+            background-color: #730362;
+        }
+
+        
+
+        .filter-radios {
+            display: none;
+        }
+
+         .filter-controls label {
+            
+            border: 2px solid #000000; 
+            color: #000000;           
+            background-color: #ead8e6;
+            transition: all 0.3s ease; 
+        }
+        
+        
+        .filter-controls label:hover {
+            border-color: #730362;     
+            background-color: #f1e4f1; 
+            color: #730362;           
+        }
+
+        
+        .filter-radios:checked + label {
+            background-color: #730362; 
+            color: #730362;            
+            border-color: #730362;    
+        }
+
+        
+        .product-col {
+            display: none;
+            
+            animation: fadeIn 0.6s;
+        }
+
+        
+        #filter-all:checked ~ .row .product-col {
+            display: block;
+           
+        }
+
+        
+        #filter-laptops:checked ~ .row .product-col.laptop {
+            display: block;
+        }
+
+        
+        #filter-smartphones:checked ~ .row .product-col.smartphone {
+            display: block;
+        }
+
+        
+        #filter-ipads:checked ~ .row .product-col.ipad {
+            display: block;
+        }
+        
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+.home-btn-container {
+  text-align: center; 
+  margin-top: 20px;
+}
+
+.home-btn {
+  background-color: #7a6374;
+  color: #faeeee;
+  font-size: 14px;
+  border-radius: 9px;
+  padding: 10px 16px;
+  text-decoration: none; 
+  font-weight: bold;
+}
+    </style>
+</head>
+<body>
+
+<section class="py-5">
+   <div class="container">
+        <h2 class="text-center fw-bold section-heading">OUR PRODUCTS</h2>
+
+        
+        <input type="radio" class="filter-radios" id="filter-all" name="product-filter" checked>
+        <input type="radio" class="filter-radios" id="filter-laptops" name="product-filter">
+        <input type="radio" class="filter-radios" id="filter-smartphones" name="product-filter">
+        <input type="radio" class="filter-radios" id="filter-ipads" name="product-filter">
+
+        
+        <div class="text-center mb-5 filter-controls">
+            
+            <label for="filter-all" class="btn mx-1">All</label>
+            <label for="filter-laptops" class="btn mx-1">Laptops</label>
+            <label for="filter-smartphones" class="btn mx-1">Smartphones</label>
+            <label for="filter-ipads" class="btn mx-1">iPads</label>
+            <div class="home-btn-container">
+  <a href="index.html" class="home-btn">Home</a>
+</div>
+        </div>
+
+        
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+    
+            <!--  LAPTOPS  -->
+            <div class="col product-col laptop">
+                <div class="card h-100">
+                    <img src="image/product01.png" class="card-img-top fixed-img" alt="Apple Laptop">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Apple</h5>
+                        <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 512GB.</p>
+                        <h5 class="price mt-auto">$500</h5>
+                        <a class="btn color mt-2" href="card.html" role="button">Add to Cart</a>  
+                    </div>
+                </div>
+            </div>
+            <div class="col product-col laptop">
+                <div class="card h-100">
+                    <img src="image/product03.png" class="card-img-top fixed-img" alt="HP Laptop">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">HP</h5>
+                        <p class="card-text">Heavy and big,<br>RAM16 , Hard 1TB</p>
+                        <h5 class="price mt-auto">$800</h5> 
+                        <a class="btn color mt-2" href="card.html" role="button">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col product-col laptop">
+                <div class="card h-100">
+                    <img src="image/product06.png" class="card-img-top fixed-img" alt="Lenovo Laptop">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">LENOVO</h5>
+                        <p class="card-text">Middle and big,<br>RAM16 , Hard 512GB</p>
+                        <h5 class="price mt-auto">$650</h5> 
+                        <a class="btn color mt-2" href="card.html" role="button">Add to Cart</a>  
+                    </div>
+                </div>
+            </div>
+            <div class="col product-col laptop">
+                <div class="card h-100">
+                    <img src="image/laptop-with-white-screen-isolated-white-wall.jpg" class="card-img-top fixed-img" alt="Samsung Laptop">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">SAMSUNG</h5>
+                        <p class="card-text">Smoothy and Attenuate,<br>RAM16, Hard 512GB</p>
+                        <h5 class="price mt-auto">$1000</h5> 
+                        <a class="btn color mt-2" href="card.html" role="button">Add to Cart</a>  
+                    </div>
+                </div>
+            </div>
+            <div class="col product-col laptop">
+                <div class="card h-100">
+                    <img src="image/11474968.png" class="card-img-top fixed-img" alt="Dell Laptop">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">DELL</h5>
+                        <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 512GB.</p>
+                        <h5 class="price mt-auto">$900</h5> 
+                        <a class="btn color mt-2" href="card.html" role="button">Add to Cart</a>  
+                    </div>
+                </div>
+            </div>
+
+            <!--  SMARTPHONES  -->
+            <div class="col product-col smartphone">
+                <div class="card h-100">
+                    <img src="image/b8a1bf75ee626940d63585279757bf7c.jpg" class="card-img-top fixed-img" alt="iPhone 13">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">iPhone 13</h5>
+                        <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 512GB</p>
+                        <h5 class="price mt-auto">$700</h5>
+                        <a class="btn color mt-2" href="card.html" role="button">Add to Cart</a>  
+                    </div>
+                </div>
+            </div>
+            <div class="col product-col smartphone">
+                <div class="card h-100">
+                    <img src="image/product07.png" class="card-img-top fixed-img" alt="Huawei Phone">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">HUAWEI</h5>
+                        <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 256GB</p>
+                        <h5 class="price mt-auto">$500</h5> 
+                        <a class="btn color mt-2" href="card.html" role="button">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col product-col smartphone">
+                <div class="card h-100">
+                    <img src="image/mobile-phone-case-product-showcase.jpg" class="card-img-top fixed-img" alt="Samsung Phone">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">SAMSUNG</h5>
+                        <p class="card-text">Middle and big,<br>RAM16 , Hard 512GB</p>
+                        <h5 class="price mt-auto">$650</h5> 
+                        <a class="btn color mt-2" href="card.html" role="button">Add to Cart</a>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="col product-col smartphone">
+                <div class="card h-100">
+                    <img src="image/v585-aew-02-devicemockup.jpg" class="card-img-top fixed-img" alt="Huawei Phone">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">LG</h5>
+                        <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 256GB</p>
+                        <h5 class="price mt-auto">$200</h5> 
+                        <a class="btn color mt-2" href="card.html" role="button">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col product-col smartphone">
+                <div class="card h-100">
+                    <img src="image/new-cell-phone-white-background.jpg" class="card-img-top fixed-img" alt="Huawei Phone">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">README</h5>
+                        <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 256GB</p>
+                        <h5 class="price mt-auto">$300</h5> 
+                        <a class="btn color mt-2" href="card.html" role="button">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--  IPADS  -->
+            <div class="col product-col ipad">
+                <div class="card h-100">
+                    <img src="image/d193714ef8d3cecb6d92aeb3bfdf149e.jpg" class="card-img-top fixed-img" alt="Galaxy Tab">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Galaxy Tab A8</h5>
+                        <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 512GB</p>
+                        <h5 class="price mt-auto">$350</h5>
+                        <a class="btn color mt-2" href="card.html" role="button">Add to Cart</a>  
+                    </div>
+                </div>
+            </div>
+            <div class="col product-col ipad">
+                <div class="card h-100">
+                    <img src="image/c312c22cbffed6a4fbb7906f2488e864.jpg" class="card-img-top fixed-img" alt="Apple iPad">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">APPLE iPad</h5>
+                        <p class="card-text">Middle and big,<br>RAM16 , Hard 512GB</p>
+                        <h5 class="price mt-auto">$650</h5> 
+                        <a class="btn color mt-2" href="card.html" role="button">Add to Cart</a>  
+                    </div>
+                </div>
+            </div>
+            <div class="col product-col ipad">
+                <div class="card h-100">
+                    <img src="image/3a23f224cf6acf1ee09708eaa17b51f2.jpg" class="card-img-top fixed-img" alt="Samsung Tab">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">SAMSUNG Tab</h5>
+                        <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 512GB.</p>
+                        <h5 class="price mt-auto">$300</h5> 
+                        <a class="btn color mt-2" href="card.html" role="button">Add to Cart</a>  
+                    </div>
+                </div>
+            </div>
+            <div class="col product-col ipad">
+                <div class="card h-100">
+                    <img src="image/cfa3b1325ec769b78597114ce8d6af2e.jpg" class="card-img-top fixed-img" alt="Samsung Tab">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">LG</h5>
+                        <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 512GB.</p>
+                        <h5 class="price mt-auto">$200</h5> 
+                        <a class="btn color mt-2" href="card.html" role="button">Add to Cart</a>  
+                    </div>
+                </div>
+            </div>
+            <div class="col product-col ipad">
+                <div class="card h-100">
+                    <img src="image/digital-tablet-case-technology-electronics.jpg" class="card-img-top fixed-img" alt="Samsung Tab">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">README</h5>
+                        <p class="card-text">Smoothy and Attenuate,<br>RAM8, Hard 512GB.</p>
+                        <h5 class="price mt-auto">$500</h5> 
+                        <a class="btn color mt-2" href="card.html" role="button">Add to Cart</a>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
