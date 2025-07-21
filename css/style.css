@@ -1,46 +1,60 @@
 
 
-.nav-link{
-    color: black;
-}
-.imgweb{
-  width: 300px;
-  height: 300px; 
-  border-radius: 20px;
-  display: flex;
-  margin-top: 100px;
+/* header&footer */
+.colornav{
+    background-color: #ebdde7b3;
+
+  }
+
+
+  .icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+  }
+
+  .navbar-custom {
+    padding-left: 40px; 
+    padding-right: 20px;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 25px;
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+  .nav-link i {
+    font-size: 20px;
+  }
+
+  footer i {
+  color: #000000 !important;
 }
 
-.custom-navbar {
-background-color: #f4e8f2;
-color: white;
-font-family: Georgia, 'Times New Roman', Times, serif;
+footer a {
+  text-decoration: none !important; 
+  color: #000000 !important;        
 }
 
-.btnnav :hover{
-color: #730362;
+.cb{
+  background-color: #ebdde7b3;
 }
 
-.btnnav:active{
-  color: #730362;
-}
+
+/* header&footer */
 
 @keyframes slideInLeft {
   0%   { left: 0px; }
   50%  { left: 200px; }
   100% { left: 200px; } 
 }
-
-.card-animate {
-  position: relative;
-  animation: slideInLeft 1.5s ease infinite;
-  margin-bottom: 30px;
-}
-
-.card-animate.delay-1 { animation-delay: 0.4s; }
-.card-animate.delay-2 { animation-delay: 0.3s; }
-.card-animate.delay-3 { animation-delay: 0.1s; }
-
 
 
 .fixed-img {

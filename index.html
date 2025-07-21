@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bussiness</title>
+    
      <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css">
+    
    
 
     
@@ -138,6 +141,8 @@
   color: #000;
 }
 
+
+
 </style>
 
 </head>
@@ -145,49 +150,89 @@
 
 <body>
 
-    <header>
+  <header>
+  <nav class="navbar mt-3">
+    <div class="container d-flex justify-content-between align-items-center w-100">
 
-       <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
-
-  <div class="container">
-    <img src="image/shopify-stroke-rounded.svg" alt="Brand Logo" width="40" height="40">
-   
-    <div class="collapse navbar-collapse" >
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        <a class="nav-link" href="categories.html">Categories</a>
-        <a class="nav-link" href="order.html">Orders</a>
-        <a class="nav-link" href="#contact">Contact Us</a>
-        <a class="nav-link" href="filter.html">Search</a>
-
+     
+      <div>
+        <img src="image/shopify-stroke-rounded.svg" alt="Brand Logo" width="50" height="50">
       </div>
 
-      <div class="d-flex align-items-center ms-auto gap-5 btnnav" style="margin-right: 15px;">
+      
+      <div class="flex-grow-1 px-3">
+        <form class="d-flex justify-content-center" role="search">
+          <input class="form-control w-75" type="search" placeholder="Search" aria-label="Search" />
+        </form>
+      </div>
 
-        <a href="card.html" class="nav-link d-flex align-items-center gap-2 ">
-  <i><img  src="image/shopping-cart-02-Stroke-Rounded.png" alt=""></i>
-  <span class="small "><strong>Your card</strong> </span>
-</a>
-        
-<a href="favorites.html" class="nav-link d-flex align-items-center gap-2 ">
-  <i class="fa-regular fa-heart fa-lg text-dark "></i>
-  <span class="small"><strong>Favorite</strong> </span>
-</a>
+      
+      <div class="d-flex align-items-center gap-4 text-center">
 
-
-        <!-- أيقونة البروفايل -->
-        <a href="profile.html" class="nav-link">
-          <i class="fa-solid fa-user fa-xl text-dark "></i>
+     
+        <a href="card.html" class="nav-link d-flex flex-column align-items-center">
+          <i class="fa-solid fa-cart-shopping  text-dark"></i>
+          <span class="fw-semibold mt-1" style="font-size: 15px;">Your card</span>
         </a>
-      </div>         
-</div>
 
+        
+        <a href="favorites.html" class="nav-link d-flex flex-column align-items-center">
+          <i class="fa-solid fa-heart  text-dark"></i>
+          <span class="fw-semibold mt-1" style="font-size: 15px;">Favorite</span>
+        </a>
 
+        <a href="" class="nav-link d-flex flex-column align-items-center">
+          <i class="fa-solid fa-bell text-dark"></i>
+          <span class="fw-semibold mt-1" style="font-size: 15px;">Notification</span>
+        </a>
+
+       
+        <a href="profile.html" class="nav-link d-flex flex-column align-items-center">
+          <i class="fa-solid fa-user text-dark"></i>
+          <span class="fw-semibold mt-1" style="font-size: 15px;">Profile</span>
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg Xbg-body-tertiary navbar-custom colornav">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
+        <li class="nav-item">
+          <a class="nav-link icon-text" href="#">
+            <i class="fa-solid fa-house"></i>
+            Home
+          </a>
+        </li>
+
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle icon-text" href="#" role="button" data-bs-toggle="dropdown">
+            <i class="fa-solid fa-layer-group"></i>
+            Categories
+          </a>
+          <ul class="dropdown-menu text-center">
+            <li><a class="dropdown-item" href="electronics.html">Electronics</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link icon-text" href="contactus.html">
+            <i class="fa-solid fa-phone"></i>
+            Contact US
+          </a>
+        </li>
+
+      </ul>
     </div>
   </div>
 </nav>
 
-    </header>
+</header>
 
 <main>
 
@@ -392,78 +437,170 @@
 </section>
 
 
+<section class="container mt-5 text-center">
 
+  <!-- Buttons -->
+  <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+    <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#couponCollapse" aria-expanded="false" aria-controls="couponCollapse">
+      Get Coupon 🎁
+    </button>
 
+    <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#discountCollapse" aria-expanded="false" aria-controls="discountCollapse">
+      Show Discount 💸
+    </button>
 
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#productCollapse" aria-expanded="false" aria-controls="productCollapse">
+      Product Details 📦
+    </button>
+  </div>
 
-<section>
-  <div class="container mt-5 size">
-  <h1 class="text-center margin-left">Contact us</h1>
-<div id="contact">
-  <div class="row align-items-center"> 
-    <div class="col">
-      
-      <form id="myForm">
-        <b>Name:</b> <input type="name" class="form-control"id="name"><br>
-        <b>Email:</b> <input type="email" class="form-control" id="email"><br>
-        <b>Text:</b> <textarea id="text" class="form-control"></textarea><br>
-        <button type="submit" class="btn-submit"><strong>Submit</strong></button>
-    </form>
+  <!-- Accordions Wrapper -->
+  <div class="accordion" id="accordionExample">
+    
+    <!-- Coupon Collapse -->
+    <div class="collapse" id="couponCollapse" data-bs-parent="#accordionExample">
+      <div class="card card-body bg-light border-success">
+        🎉 Use code <strong>SALE50</strong> to get 50% off on your first order!
+      </div>
     </div>
-</div>
-</div>
-</div>
+
+    <!-- Discount Collapse -->
+    <div class="collapse" id="discountCollapse" data-bs-parent="#accordionExample">
+      <div class="card card-body bg-light border-danger">
+        📣 Special discount up to 30% on new arrivals! Hurry up!
+      </div>
+    </div>
+
+    <!-- Product Collapse -->
+    <div class="collapse" id="productCollapse" data-bs-parent="#accordionExample">
+      <div class="card card-body bg-light border-primary text-start ">
+        <h5>Product Name: Smart Watch X2</h5>
+        <p>Details: Stylish and durable smartwatch with fitness tracking features. Waterproof, 7-day battery, Bluetooth.</p>
+        <p><strong>Price:</strong> $199</p>
+      </div>
+    </div>
+
+  </div>
 </section>
 
-</main>
-    
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<footer class="text-center text-lg-start  text-muted cb">
+  
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+   
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+     
+      <div class="row mt-3">
+        
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+      Smart Tech Starts Here.
+      Discover Innovation at Every Click.
+      Your Favorite Electronics All in One Place.
+          </p>
+        </div>
+        
+
+       
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Electronics</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Clothes</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Fragrances</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">footwear</a>
+          </p>
+        </div>
+        
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fa-solid fa-house me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+       
+      </div>
+     
+    </div>
+  </section>
   
 
-<footer class="container-fluid footer-container">
-  <div class="container">
-    <div class="row justify-content-between">
-      
-      <!-- العمود الأول: About Us -->
-      <div class="col-md-4 text-start">
-        <h1 style="font-size: 30px;">About Us</h1>
-        <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, <br>sed do eiusmod tempor incididunt ut.</p>
-        <ul class="contact-info">
-          <li><img src="image/location-01-Stroke-Rounded.png" alt="">1734 Stonecoal Road</li>
-          <li><img src="image/call-02-Stroke-Rounded.png" alt="">+967 777333555</li>
-          <li><img src="image/mail-01-Stroke-Rounded.png" alt="">email@email.com</li>
-        </ul>
-      </div>
-
-      <!-- العمود الثاني: Information -->
-      <div class="col-md-3">
-        <h1 style="font-size: 30px;">Information</h1> 
-        <ul style="list-style: none; padding-left: 0;">
-          <li style="margin-bottom: 10px">About Us</li>
-          <li style="margin-bottom: 10px">Privacy Policy</li>
-          <li style="margin-bottom: 10px">Orders and Returns</li>
-          <li style="margin-bottom: 10px">Terms </li>
-          <li style="margin-bottom: 10px">Conditions</li>
-          <li style="margin-bottom: 10px">Contact Us</li>
-        </ul>
-      </div>
-
-      <!-- العمود الثالث: Service -->
-      <div class="col-md-3">
-        <h1 style="font-size: 30px;">Service</h1> 
-        <ul style="list-style: none; padding-left: 0;">
-          <li style="margin-bottom: 10px">My Account</li>
-          <li style="margin-bottom: 10px">View Card</li>
-          <li style="margin-bottom: 10px">Wishlist</li>
-          <li style="margin-bottom: 10px">Track My Order </li>
-          <li style="margin-bottom: 10px">Contact Us</li>
-          <li style="margin-bottom: 10px">Help</li>
-        </ul>
-      </div>
-
-    </div>
+ 
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2025 Copyright:
+    <a class="text-reset fw-bold" href="">Your Website 2025</a>
   </div>
+  
 </footer>
-
 
 </body>
 </html>
